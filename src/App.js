@@ -4,8 +4,9 @@ import Footer from './Templates/footer';
 function App() {
   return (
     <>
-  <Header/>
-<Footer/>
+    <Header/>
+
+    <Footer/>
     </>
   );
 }

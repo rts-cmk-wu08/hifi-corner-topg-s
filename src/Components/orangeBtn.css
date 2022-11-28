@@ -1,0 +1,12 @@
+.orangeBtn{
+    padding: 0.5% 2%;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #F4F4F2;
+    background-color: #FF6900;
+    border-radius: 3px;
+    border: 0px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+}

@@ -1,11 +1,13 @@
 import './App.css';
 import Header from './Templates/Header';
+import Footer from './Templates/footer';
 function App() {
   return (
-    <div>
-  <Header/>
+    <>
+    <Header/>
 
-    </div>
+    <Footer/>
+    </>
   );
 }
 

@@ -1,6 +1,6 @@
 
 
-import Cards from '../Components/Card';
+import Cards from '../Components/Cards';
 
 
 

@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Contact from './Pages/Contact'
+import Products from './Pages/Products'
 import { createBrowserRouter, createRoutesFromElements,
   RouterProvider, Route } from 'react-router-dom';
 
@@ -13,6 +17,7 @@ import { createBrowserRouter, createRoutesFromElements,
         <Route index element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/products" element={<Products/>}/>
       </Route>
     )
   );

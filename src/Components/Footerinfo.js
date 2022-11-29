@@ -4,9 +4,9 @@ import {RiYoutubeLine} from "react-icons/ri"
 import {RiInstagramLine} from "react-icons/ri"
 import {RiTwitterLine} from "react-icons/ri"
 
-const Contact = () => {
+const Footerinfo = () => {
     return ( 
-        <>
+        <section>
             <p>Contact</p>
             <p>2 Joppa Rd, Edinburgh, EH15 2EU</p>
             <div>
@@ -24,10 +24,10 @@ const Contact = () => {
            <RiTwitterLine/>
            <RiYoutubeLine/>
            </div>
-        </>
+        </section>
         
      );
 }
  
-export default Contact;
+export default Footerinfo;
 

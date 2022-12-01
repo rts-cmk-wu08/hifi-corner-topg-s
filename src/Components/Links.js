@@ -1,13 +1,12 @@
-import "./Links.css"
-
 const Links = () => {
     return ( 
         <section>
-            <div className="Links--box">
+            <div>
             <p>Returns & Refunds</p>
             <p>Delivery</p>
             <p>Privacy Policy</p>
-            <p>Terms & Conditions</p></div>
+            <p>Terms & Conditions</p>
+            </div>
         </section>
      );
 }

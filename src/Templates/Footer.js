@@ -2,12 +2,14 @@ import Links from "../Components/Links";
 import Navigation from "../Components/Navigation";
 import Footerinfo from "../Components/Footerinfo";
 import Payment from "../Components/Payment";
+import "./Footer.css"
 const Footer = () => {
     return ( 
-        <footer>
+        <footer className="Footer">
+            <div className="Footer__flex">
  <Navigation/>
 <Links/>
-<Footerinfo/>
+<Footerinfo/></div>
 <Payment/>
         </footer>
      );

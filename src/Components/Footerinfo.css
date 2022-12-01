@@ -1,0 +1,11 @@
+.Phonenumber{ 
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+.Footerinfo{
+display: flex;
+  flex-direction: column;
+font-weight: bold;
+}
+

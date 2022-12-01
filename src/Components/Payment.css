@@ -1,0 +1,36 @@
+.payment--methods{
+margin-right: 20px;
+margin-left: 20px;
+}
+
+.payment--stripe{
+    border-top: white solid 2px;
+width: 97%;
+margin: 0 auto;
+}
+.stripe__color{
+    color: #2c97de;
+}
+
+.visa__color{
+    color:#0164af ;
+}
+
+.mastercard__color{
+   
+color: 
+#919191
+
+;
+
+
+}
+
+.Footer__undertext{
+    padding: 20px;
+    margin: 0;
+}
+
+.payment--adjustments{
+    margin-left: 30px ;
+}

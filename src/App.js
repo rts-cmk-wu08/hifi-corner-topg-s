@@ -1,13 +1,14 @@
 import './App.css';
 import Header from'./Templates/Header';
 import Footer from './Templates/Footer';
-import { Outlet } from 'react-router-dom';
+import Main from './Templates/Main';
 function App() {
   return (
     <>
     <Header/>
     
-    <Outlet/>
+    <Main/>
+
     <Footer/>
     </>
   );

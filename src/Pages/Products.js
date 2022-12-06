@@ -9,7 +9,8 @@ const Products = () => {
       <div className="products__divContainer">
         <aside className="asideSortby">
           <h4>Sort by</h4>
-          <h5 className="asideSortby__listH5">Brand</h5>
+          <Dropdown />
+          <h5 className="asideSortby__listH5">Color</h5>
           <ul>
             <li className="asideSortby__list">
               Steelseries <input type="checkbox" />
@@ -21,7 +22,6 @@ const Products = () => {
               Apple <input type="checkbox" />
             </li>
           </ul>
-          <Dropdown />
           <Dropdown />
         </aside>
         <section className="productsSection__Cards">

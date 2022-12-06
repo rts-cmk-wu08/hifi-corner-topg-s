@@ -31,7 +31,9 @@ const Cards = ({compare, stock}) => {
                         <p>{card.category}</p>
                         <p>£ {card.price}</p>
                         <div className="containerInStock">
-                        <Link to={`/product/${card.id}`}><OrangeBtn text="Read more"/></Link>
+                        <Link to={`/product/${card.id}`}>
+                            {location.pathname === "/" ? <OrangeBtn text="Read more"/> : <OrangeBtn text="Add to cart"/>}
+                        </Link>
                         {stock && (<p>In Stock</p>)}
                         </div>
                     </article>

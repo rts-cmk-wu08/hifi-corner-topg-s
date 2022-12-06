@@ -5,7 +5,7 @@ import OrangeBtn from "./OrangeBtn"
 
 
 
-const Cards = () => {
+const Cards = ({compare, stock}) => {
 
     const [cards, setCards] = useState();
     const [loading, setLoading] = useState(true);
@@ -25,12 +25,14 @@ const Cards = () => {
             <>
                 {cards.map(card => (
                     <article key={card.id}>
+                        {compare && (<p className="compare">Compare</p>)}
                          <Link to={`/product/${card.id}`}><img src={card.imageUrl} alt="" /></Link>
                         <p>{card.name}</p>
                         <p>{card.category}</p>
                         <p>£ {card.price}</p>
-                        <div>
+                        <div className="containerInStock">
                         <Link to={`/product/${card.id}`}><OrangeBtn text="Read more"/></Link>
+                        {stock && (<p>In Stock</p>)}
                         </div>
                     </article>
                 ))}

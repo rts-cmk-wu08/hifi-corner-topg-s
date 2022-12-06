@@ -1,0 +1,21 @@
+header nav {
+    display: flex;
+    justify-content: start;
+    padding-left: 2em;
+    background-color: black;
+    height: 6em;
+}
+
+nav img {
+    height: 5em;
+    padding-right: 3em;
+}
+
+.contactUs {
+    color: white;
+    text-decoration: none;
+}
+
+.Linked--color {
+    padding-right: 3em;
+}

@@ -1,6 +1,10 @@
+import Navigation from "../Components/Navigation";
+import "./Header.css"
 const Header = () => {
     return ( 
-        <header></header>
+        <header>
+            <Navigation header="true" logo="true"></Navigation>
+        </header>
      );
 }
  

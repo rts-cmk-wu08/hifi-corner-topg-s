@@ -4,6 +4,7 @@ import './infoContainerHome.css'
 const InfoContainerHome = () => {
     return ( 
         <section className='infoWrapper'>
+        
 
             <div className='whatWeDoWrapper'>
                 <h2>What we do</h2>

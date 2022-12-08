@@ -15,6 +15,7 @@ const { cartCount, cartItems, totalPrice } = useContext(Cartcontext)
 <div className={`cartContents ${dropdownVisible ? 'cartContents--visible' : ''}`}>
 
 
+    
 <h2>Cart</h2>
  {cartItems.map((item) => (
     <div className="cartItem">

@@ -5,7 +5,7 @@ import OranegBtn from "./OrangeBtn";
 
 import { Cartcontext } from "../Contexts/Cartcontext";
 const Cart = () => {
-const { cartItems } = useContext(Cartcontext)
+const { cartCount, cartItems } = useContext(Cartcontext)
     const [dropdownVisible, setDropdownVisible] = useState(false)
     const handleClick =() => {setDropdownVisible(!dropdownVisible)}
     console.log(dropdownVisible)
@@ -13,8 +13,20 @@ const { cartItems } = useContext(Cartcontext)
         <section className="Cart">
 <FaShoppingCart onClick={handleClick} size={35} />
 <div className={`cartContents ${dropdownVisible ? 'cartContents--visible' : ''}`}>
+
+
 <h2>Cart</h2>
-<p>total items : { cartItems }</p>
+ {cartItems.map((item) => (
+    <div className="cartItem">
+        <img src={item.imageUrl} alt="" />
+        <div className="cartItem__info">
+            <h3>{item.name}</h3>
+            <p>Price: {item.price}</p>
+            <p>Quantity: {item.count}</p>
+        </div>
+    </div>
+))}
+<p>total items : { cartCount }</p>
 <OranegBtn text="Go to cart"/>
 <OranegBtn text="Go to Payments"/>
 </div>

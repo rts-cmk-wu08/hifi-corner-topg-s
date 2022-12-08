@@ -5,7 +5,7 @@ import OranegBtn from "./OrangeBtn";
 
 import { Cartcontext } from "../Contexts/Cartcontext";
 const Cart = () => {
-const { cartCount, cartItems } = useContext(Cartcontext)
+const { cartCount, cartItems, totalPrice } = useContext(Cartcontext)
     const [dropdownVisible, setDropdownVisible] = useState(false)
     const handleClick =() => {setDropdownVisible(!dropdownVisible)}
     console.log(dropdownVisible)
@@ -27,6 +27,8 @@ const { cartCount, cartItems } = useContext(Cartcontext)
     </div>
 ))}
 <p>total items : { cartCount }</p>
+<p>total price : { totalPrice }</p>
+
 <OranegBtn text="Go to cart"/>
 <OranegBtn text="Go to Payments"/>
 </div>

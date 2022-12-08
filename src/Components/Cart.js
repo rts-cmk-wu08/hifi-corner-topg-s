@@ -18,7 +18,7 @@ const { cartCount, cartItems, totalPrice } = useContext(Cartcontext)
 <h2>Cart</h2>
  {cartItems.map((item) => (
     <div className="cartItem">
-        <img src={item.imageUrl}/>
+        <img src={item.imageUrl} alt=""/>
         <div className="cartItem__info">
             <h3>{item.name}</h3>
             <p>Price: {item.price}</p>

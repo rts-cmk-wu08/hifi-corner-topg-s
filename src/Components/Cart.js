@@ -1,8 +1,11 @@
 import {FaShoppingCart} from "react-icons/fa"
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "./Cart.css"
-const Cart = () => {
+import OranegBtn from "./OrangeBtn";
 
+import { Cartcontext } from "../Contexts/Cartcontext";
+const Cart = () => {
+const { bookings} = useContext(Cartcontext)
     const [dropdownVisible, setDropdownVisible] = useState(false)
     const handleClick =() => {setDropdownVisible(!dropdownVisible)}
     console.log(dropdownVisible)
@@ -10,8 +13,12 @@ const Cart = () => {
         <section className="Cart">
 <FaShoppingCart onClick={handleClick} size={35} />
 <div className={`cartContents ${dropdownVisible ? 'cartContents--visible' : ''}`}>
-blabla
-</div></section>
+<h2>Cart</h2>
+<OranegBtn text="Go to cart"/>
+<OranegBtn text="Go to Payments"/>
+</div>
+<p>no of bookings : {bookings}</p>
+</section>
     );
 }
  

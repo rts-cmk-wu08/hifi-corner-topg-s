@@ -10,7 +10,7 @@ const Cart = () => {
         <section className="Cart">
 <FaShoppingCart onClick={handleClick} size={35} />
 <div className={`cartContents ${dropdownVisible ? 'cartContents--visible' : ''}`}>
-        
+     
   
 blabla
 </div></section>

@@ -4,11 +4,13 @@ header nav {
     padding-left: 2em;
     background-color: black;
     height: 6em;
+    font-weight: lighter;
 }
 
 nav img {
     height: 5em;
     padding-right: 3em;
+    padding-top: .5em;
 }
 
 .contactUs {
@@ -16,6 +18,8 @@ nav img {
     text-decoration: none;
 }
 
-.Linked--color {
+.Linked--color,
+.contactUs {
     padding-right: 3em;
+    padding-top: 1.2em;
 }

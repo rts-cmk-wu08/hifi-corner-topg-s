@@ -8,6 +8,7 @@
 .cartContents--visible{
     display: block;
 position: absolute;
+z-index: 1000;
 right: 5%;
 background-color: white;
 }

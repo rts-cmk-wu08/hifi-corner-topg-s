@@ -13,18 +13,24 @@ const Cartprovider = (props) => {
         price: 4000,
         imageUrl: "https://topgbilleder.netlify.app/img/cd_afspillere/creek_classic_cd.jpg"},
         {
-            id: 1,
+            id: 2,
             name: "Creek Destiny cd player",
             category: "cd-player",
             count: 8,
             price: 4000,
             imageUrl: "https://topgbilleder.netlify.app/img/cd_afspillere/creek_Destiny_CD.jpg"}
     ]);
+   
     const HandleaddtoCart = (newItem) =>{
         let newCart = [...cartItems, newItem]
         setcartItems(newCart)
     }
-   
+    const handleRemoveFromCart = (id) =>{
+      console.log("this has been removed")
+      let cartarray = [...cartItems]
+        let updatedCart = cartarray.filter(item => item.id !== id)
+      setcartItems(updatedCart)
+    }
 
   useEffect(() => {
     setCartCount(cartItems.reduce((accumulator, item) => accumulator+item.count, 0))
@@ -33,7 +39,7 @@ const Cartprovider = (props) => {
   
 
     return (
-        <Cartcontext.Provider value={{cartItems, cartCount, setcartItems, HandleaddtoCart, totalPrice }}>
+        <Cartcontext.Provider value={{cartItems, cartCount, setcartItems, HandleaddtoCart,handleRemoveFromCart, totalPrice }}>
         {props.children}
         </Cartcontext.Provider>
       );

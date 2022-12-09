@@ -30,16 +30,15 @@ body{
     font-weight: 600;
     font-size: 24px;
     margin-top: 3%;
+    text-transform: capitalize;
 }
 .info__wrapper h3{
     font-weight: 600;
     font-size: 20px;
 }
-.infDes__wrapper{
-    margin-right: 2.5%;
-}
 .description__wrapper{
     width: 504px;
+    margin-right: 2.5rem;
 }
 .description__wrapper p{
     font-family: 'Open Sans', sans-serif;
@@ -53,4 +52,162 @@ body{
 }
 .description__wrapper p:nth-child(2){
     margin-top: 3%;
+}
+.colors{
+    display: flex;
+    justify-content: space-between;
+    width: 7rem;
+    margin-top: 2rem;
+}
+.colors span{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+}
+.colors__black{
+    background: #000000;
+    border: 1px solid #000000;
+}
+.colors__silver{
+    background: linear-gradient(200.56deg, #919292 24.92%, #DFE0E1 86.36%);
+}
+.colors__gold{
+    background: linear-gradient(191.53deg, #AF8726 13.03%, #F8F08B 91.53%);
+}
+.colors__names{
+    display: flex;
+    justify-content: space-between;
+    width: 7rem;
+}
+.colors__names p{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+.product__price{
+    margin: 0;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+}
+.price__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2.5rem;
+}
+.stock__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.stock__wrapper p{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.green{
+    width: 15px;
+    height: 15px;
+    background: #008000;
+    border-radius: 15px;
+}
+.counterNdBtn__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    align-items: center;
+}
+.counter__wrapper{
+    display: flex;
+    align-items: center;
+}
+/* vi vælger elementet med classen counter__wrapper og tager fat i den div der har et p tag indeni så stylingen kommer 
+på diven og ikke p tagget hvis spørgsmål kom til Martin */
+.counter__wrapper div:has(p){
+    background: #F4F4F2;
+    border-radius: 3px;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.counter__wrapper p{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.counter__wrapper button{
+    background-color: transparent;
+    border: none;
+}
+.counter__wrapper button:nth-child(1){
+    font-size: 3rem;
+}
+.counter__wrapper button:nth-child(3){
+    font-size: 2rem;
+}
+.counterNdBtn__wrapper .orangeBtn{
+    width: 23.3rem;
+    height: 2.8rem;
+}
+.specifications__wrapper{
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.specifications__wrapper h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    margin: 5.8rem 0 3rem 2rem;
+}
+.horBorder{
+    width: 95%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #D2D2D2;
+    margin-top: 5rem;
+}
+.specifications{
+    width: 31.3rem;
+    margin-left: 5%;
+}
+.eachSpecif__wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 3rem;
+}
+.specif__name, .specif__value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.specif__name{
+    width: 13.3rem;
+    font-family: 'Open sans',sans-serif;
+    font-weight: 800;
+    border-right: 1px solid #D2D2D2;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.specif__value{
+    width: 17.9rem;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open sans',sans-serif;
+}
+.eachSpecif__wrapper:nth-child(odd){
+    background-color: #E8E8E8;
+}
+.eachSpecif__wrapper p{
+    margin: 0;
 }

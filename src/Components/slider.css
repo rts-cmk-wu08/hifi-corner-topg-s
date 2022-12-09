@@ -1,27 +1,27 @@
 .react-slideshow-container{
-    width: 50%;
-    height: 30rem;
-
-}
-.react-slideshow-wrapper{
-    width: 100%;
-    height: 60%;
-}
-.images-wrap{
-    width: 100%;
-    height: 100%;
-    align-items: center;
+    width: 40rem;
+    height: auto;
+    margin-top: 28%;
+    margin-left: 5%;
 }
 .each-slide-effect{
-    width: 80%;
-    height: 70%;
+    width: 60%;
+    height: 11.3rem;
     margin: 0 auto;
 }
 .each-slide-effect img{
     width: 100%;
     height: 100%;
 }
-.indicators
-{
-    margin-right: 50%;
+.indicators{
+    padding-top: 25%;
+    display: flex;
+    gap: 11px;
 }
+.react-slideshow-container+ul.indicators .each-slideshow-indicator:before{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b6b6b6;
+    background-color: #D2D2D2;
+}
+

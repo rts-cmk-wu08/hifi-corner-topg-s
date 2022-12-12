@@ -16,3 +16,13 @@ background-color: white;
     text-align: right;
     margin-right: 5em;
 }
+
+.Counter__wrapper{
+    display: flex;
+}
+
+button{
+   background-color: white;
+    outline: none;
+    border: none;
+}

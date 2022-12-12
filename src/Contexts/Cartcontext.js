@@ -5,7 +5,7 @@ export const Cartcontext = createContext()
 const Cartprovider = (props) => {
     const [cartCount, setCartCount] = useState(0);
     const [totalPrice, setTotalPrice] = useState(0);
-    const [cartItems, setcartItems] = useState([ {
+    const [cartItems, setcartItems] = useState( JSON.parse(localStorage.getItem("shoppingCart")) || [ {
         id: 1,
         name: "classic cd player",
         category: "cd-player",
@@ -24,12 +24,32 @@ const Cartprovider = (props) => {
     const HandleaddtoCart = (newItem) =>{
         let newCart = [...cartItems, newItem]
         setcartItems(newCart)
+        localStorage.setItem("shoppingCart", JSON.stringify(newCart))
     }
     const handleRemoveFromCart = (id) =>{
       console.log("this has been removed")
       let cartarray = [...cartItems]
         let updatedCart = cartarray.filter(item => item.id !== id)
       setcartItems(updatedCart)
+      localStorage.setItem("shoppingCart", JSON.stringify(updatedCart))
+
+    }
+    const handleIncrease = (id) =>{
+      let updatedCart = cartItems.map(item =>{ 
+        if (item.id === id) item.count = item.count + 1 
+        return item
+      })
+    setcartItems(updatedCart)
+
+    localStorage.setItem("shoppingCart", JSON.stringify(updatedCart))
+    }
+    const handleDecrease = (id) =>{
+      let updatedCart = cartItems.map(item =>{ 
+        if (item.id === id) item.count = item.count - 1
+        return item
+      })
+    setcartItems(updatedCart)
+    localStorage.setItem("shoppingCart", JSON.stringify(updatedCart))
     }
 
   useEffect(() => {
@@ -39,7 +59,7 @@ const Cartprovider = (props) => {
   
 
     return (
-        <Cartcontext.Provider value={{cartItems, cartCount, setcartItems, HandleaddtoCart,handleRemoveFromCart, totalPrice }}>
+        <Cartcontext.Provider value={{cartItems, cartCount, setcartItems, HandleaddtoCart,handleRemoveFromCart,handleDecrease,handleIncrease, totalPrice }}>
         {props.children}
         </Cartcontext.Provider>
       );

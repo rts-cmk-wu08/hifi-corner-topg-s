@@ -1,13 +1,28 @@
 .cartContents{
     display: none;
     position: relative;
+    text-align: left;
+    width: 19rem;
+    padding: 0.25rem;
 }
 .cartContents--visible{
     display: block;
 position: absolute;
-left: 95%;
+z-index: 1000;
+right: 5%;
+background-color: white;
 }
 .Cart{
     text-align: right;
-    margin-right: 2em;
+    margin-right: 5em;
+}
+
+.Counter__wrapper{
+    display: flex;
+}
+
+button{
+   background-color: white;
+    outline: none;
+    border: none;
 }

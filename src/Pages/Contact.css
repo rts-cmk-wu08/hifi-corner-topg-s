@@ -1,0 +1,37 @@
+.Contactbox{
+margin: 2em;
+background-color: white;
+padding: 1em;
+display: flex;
+flex-direction: column;
+}
+
+.Contactgroup{
+    display: flex;
+flex-direction: column;
+margin-top: 2rem;
+}
+.Contactgroup input{
+   max-width: 70%;
+ height: 2rem;
+}
+.Contactgroup textarea{
+    resize: none;
+  height: 16rem;
+}
+.Submitbtn{
+    margin-top: 2rem;
+    padding: 0.5% 2%;
+    color: #F4F4F2;
+    background-color: #FF6900;
+    border-radius: 3px;
+    border: 0px;
+align-self: flex-end;
+}
+
+.getintouch{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+    margin-left: 2rem;
+}

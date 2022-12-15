@@ -95,3 +95,22 @@ h1 {
     height: 35px;
     width: 7.5rem;
 }
+
+.stock {
+    width: 10px;
+    height: 10px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+.stockGreen {
+    background-color: green;
+}
+
+.stockYellow {
+    background-color: yellow;
+}
+
+.stockRed {
+    background-color: red;
+}

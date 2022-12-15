@@ -5,7 +5,7 @@ const Header = () => {
     return ( 
         <header>
             <Navigation header="true" logo="true"></Navigation>
-            {/* <SearchBar/> */}
+            <SearchBar/>
         </header>
      );
 }

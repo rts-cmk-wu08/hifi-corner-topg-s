@@ -18,8 +18,8 @@ const { cartCount, cartItems, totalPrice,handleRemoveFromCart,handleDecrease,han
 <FaShoppingCart onClick={handleClick} size={35} />
 <div className={`cartContents ${dropdownVisible ? 'cartContents--visible' : ''}`}>  
 <h2>Cart</h2>
- {cartItems.map((item) => (
-    <div className="cartItem">
+ {cartItems.map((item,index) => (
+    <div className="cartItem" key={index}>
         <button onClick={()=>{handleRemoveFromCart(item.id)}}>X</button>
         <img src={item.imageUrl} alt=""/>
         <div className="cartItem__info">

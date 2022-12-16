@@ -1,3 +1,4 @@
+import { click } from "@testing-library/user-event/dist/click";
 import {createContext, useState, useEffect} from "react"
 
 export const Cartcontext = createContext()
@@ -25,6 +26,11 @@ const Cartprovider = (props) => {
         let newCart = [...cartItems, newItem]
         setcartItems(newCart)
         localStorage.setItem("shoppingCart", JSON.stringify(newCart))
+
+     
+
+        
+        
     }
     const handleRemoveFromCart = (id) =>{
       console.log("this has been removed")

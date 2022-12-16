@@ -8,7 +8,7 @@ import Contact from './Pages/Contact'
 import Products from './Pages/Products'
 import Product, { loader as  getProductData }from './Pages/Product';
 import { createBrowserRouter, createRoutesFromElements,
-  RouterProvider, Route } from 'react-router-dom';
+  RouterProvider, Route,} from 'react-router-dom';
 
 
 

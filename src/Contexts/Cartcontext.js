@@ -51,7 +51,7 @@ const Cartprovider = (props) => {
     }
     const handleDecrease = (id) =>{
       let updatedCart = cartItems.map(item =>{ 
-        if (item.id === id) item.count = item.count - 1
+        if (item.id === id && item.count>1 ) item.count = item.count - 1 
         return item
       })
     setcartItems(updatedCart)

@@ -1,44 +1,49 @@
 import {FaShoppingCart} from "react-icons/fa"
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Cart.css"
-import OranegBtn from "./OrangeBtn";
-
 import { Cartcontext } from "../Contexts/Cartcontext";
 const Cart = () => {
-const { cartCount, cartItems, totalPrice,handleRemoveFromCart,handleDecrease,handleIncrease } = useContext(Cartcontext)
+    const {pathname} = useLocation();
+const {  cartItems, totalPrice,handleRemoveFromCart,handleDecrease,handleIncrease } = useContext(Cartcontext)
     const [dropdownVisible, setDropdownVisible] = useState(false)
     const handleClick =() => {setDropdownVisible(!dropdownVisible)
     console.log("hello")
     }
-    
     console.log(dropdownVisible)
-   
+    useEffect(() => {
+    setDropdownVisible(false)
+    }, [pathname]);
+
     return (  
         <section className="Cart">
 <FaShoppingCart onClick={handleClick} size={35} />
 <div className={`cartContents ${dropdownVisible ? 'cartContents--visible' : ''}`}>  
 <h2>Cart</h2>
- {cartItems.map((item,index) => (
-    <div className="cartItem" key={index}>
-        <button onClick={()=>{handleRemoveFromCart(item.id)}}>X</button>
-        <img src={item.imageUrl} alt=""/>
+ {cartItems.map((item) => (
+    <section className="cartItem">
+        <button className="Removebtn--cart" onClick={()=>{handleRemoveFromCart(item.id)}}>X</button>
         <div className="cartItem__info">
+        <img className="Cartimg" src={item.imageUrl} alt=""/>
             <h3>{item.name}</h3>
-            <p>Price: {    Intl.NumberFormat('en-GB', {style: 'currency', currency: 'GBP'})
-    .format(item.price)}</p>
-            <p>Quantity: {item.count}</p>
         </div>
+        <div className="Cart--Counter">   
+            <button onClick={()=>{handleDecrease(item.id)}}>-</button>
+        <p className="Counter--number">{item.count}</p>
         <button onClick={()=>{handleIncrease(item.id)}}>+</button>
-        <button onClick={()=>{handleDecrease(item.id)}}>-</button>
-    </div>
+        <p className="Cartprice">{    Intl.NumberFormat('en-GB', {style: 'currency', currency: 'GBP'})
+    .format(item.price)}</p>
+        </div>
+      
+    </section>
 ))}
-<p>total items : { cartCount }</p>
-<p>total price : { Intl.NumberFormat('en-GB', {style: 'currency', currency: 'GBP'})
+<p>{ Intl.NumberFormat('en-GB', {style: 'currency', currency: 'GBP'})
     .format(totalPrice) }</p>
-
-<OranegBtn text="Go to cart"/>
-<OranegBtn text="Go to Payments"/>
+<div className="Btn-space">
+<Link to="Cart-page"><button className="Lintobtns">Go to cart</button></Link>
+<button className="Lintobtns">Go to payment</button></div>
 </div>
+
 
 
 </section>

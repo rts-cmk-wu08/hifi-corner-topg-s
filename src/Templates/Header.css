@@ -13,6 +13,11 @@ nav img {
     padding-top: .5em;
 }
 
+input {
+    position: absolute;
+    margin-left: -5em;
+}
+
 .contactUs {
     color: white;
     text-decoration: none;
@@ -25,21 +30,20 @@ nav img {
 }
 
 .user-icon,
-.cart-icon,
-.search-icon {
+.cart-icon {
     height: 2em;
-    width: 1.4em;
+    width: 1.6em;
     position: absolute;
     top: 2em;
     color: white;
 }
 
 .user-icon {
-    right: 11.5em;
+    right: 6.5em;
 }
 
 .cart-icon {
-    right: 5em;
+    right: 3em;
 }
 
 .search-icon {
@@ -47,6 +51,10 @@ nav img {
     width: 1.4em;
     position: absolute;
     top: 2em;
-    right: 20.2em;
+    right: 11.7em;
     color: black;
+}
+
+.navigation-right {
+    display: flex;
 }

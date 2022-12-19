@@ -2,7 +2,6 @@ import {FaShoppingCart} from "react-icons/fa"
 import { useState, useContext, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Cart.css"
-import OranegBtn from "./OrangeBtn";
 import { Cartcontext } from "../Contexts/Cartcontext";
 const Cart = () => {
     const {pathname} = useLocation();

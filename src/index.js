@@ -9,7 +9,7 @@ import Products from './Pages/Products'
 import Cartpage from './Pages/Cart-page';
 import Product, { loader as  getProductData }from './Pages/Product';
 import { createBrowserRouter, createRoutesFromElements,
-  RouterProvider, Route } from 'react-router-dom';
+  RouterProvider, Route,} from 'react-router-dom';
 
 
 

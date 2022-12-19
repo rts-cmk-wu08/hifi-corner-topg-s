@@ -6,6 +6,7 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Products from './Pages/Products'
+import Cartpage from './Pages/Cart-page';
 import Product, { loader as  getProductData }from './Pages/Product';
 import { createBrowserRouter, createRoutesFromElements,
   RouterProvider, Route } from 'react-router-dom';
@@ -17,6 +18,7 @@ import { createBrowserRouter, createRoutesFromElements,
       <Route path="/" element={<App/>}>
         <Route index element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/Cart-page" element={<Cartpage/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/products" element={<Products/>}/>
         <Route path="/product/:id" element={<Product/>} loader={getProductData}/>

@@ -103,7 +103,7 @@ const Cards = ({ search, compare, stock }) => {
                 ))}
             </>
          );
- }
+ 
     
 
  

@@ -1,0 +1,10 @@
+.search-inner {
+    position: absolute;
+    top: 2em;
+    right: 20em;
+}
+
+input {
+    height: 2em;
+    width: 15em;
+}

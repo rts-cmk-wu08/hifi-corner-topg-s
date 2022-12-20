@@ -7,7 +7,6 @@ export default function Payment() {
   console.log(watch("example"));
 
   return (
-  
     <section>
       <h1 className="getintouch">Get in touch with us</h1>
     <form  className="Paymentbox" onSubmit={handleSubmit(onSubmit)}>
@@ -38,6 +37,11 @@ export default function Payment() {
       {errors.exampleRequired && <span>This field is required</span>}
       
     </form>
+   <div className="Payment-methods">
+    <label><input type="radio" /></label>
+    <label><input type="radio" /></label>
+    <label><input type="radio" /></label>
+   </div>
     </section>
   );
 }

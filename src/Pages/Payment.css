@@ -42,3 +42,7 @@
 margin-left: 1.75rem;
     }
     
+    .Payment-methods{
+        display: flex;
+        flex-direction: column;
+    }

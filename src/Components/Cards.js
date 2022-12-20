@@ -44,7 +44,7 @@ const Cards = ({ compare, stock }) => {
             </Link>
             {stock && (
               <>
-                <Stock stockStatus={card.inStock} />
+                <Stock stockStatus={card.stock} />
                 <p>In Stock</p>
               </>
             )}

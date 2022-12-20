@@ -4,6 +4,7 @@ import Footer from './Templates/Footer';
 import Main from './Templates/Main';
 import Cart from './Components/Cart';
 import Cartprovider from './Contexts/Cartcontext';
+import Faq from './Pages/Faq';
 function App() {
   return (
     <Cartprovider>
@@ -11,7 +12,7 @@ function App() {
     <Header/>
   <Cart/>
     <Main/>
-
+    <Faq/>
     <Footer/>
     </>
     </Cartprovider>

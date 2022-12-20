@@ -8,7 +8,6 @@ const Counter = (props) => {
 const [ count, setCount] = useState(parseInt(localStorage.getItem(props.itemname))  || 0); 
 
 useEffect(() => {
-    console.log("hello from Counter Useffect!")
     localStorage.setItem(props.itemname, count)
 
 }, [count, props.itemname]);

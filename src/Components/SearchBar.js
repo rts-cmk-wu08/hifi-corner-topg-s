@@ -24,7 +24,7 @@ const SearchBar = () => {
 
         <form onSubmit={handleSubmit} className="search-container">
             <div className="search-inner">
-                <input type="text" name="search" placeholder="Search products..."  />
+                <input type="text" className="Searchbar" name="search" placeholder="Search products..."  />
                 
             </div>
         </form>

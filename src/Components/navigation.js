@@ -13,7 +13,7 @@ const Navigation = ({header,logo}) => {
           <Link className="Linked--color" to='/products'><p>Shop</p></Link>
 
           {header && (
-            <Link className="contactUs"><p>Contact Us</p></Link>
+            <Link className="contactUs" to="/Contact"><p>Contact Us</p></Link>
           )}
         </nav>
      );

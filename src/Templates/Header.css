@@ -1,8 +1,14 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
 header nav {
     display: flex;
     justify-content: start;
     padding-left: 2em;
-    background-color: black;
     height: 6em;
     font-weight: lighter;
 }
@@ -13,10 +19,7 @@ nav img {
     padding-top: .5em;
 }
 
-input {
-    position: absolute;
-    margin-left: -5em;
-}
+
 
 .contactUs {
     color: white;
@@ -33,13 +36,12 @@ input {
 .cart-icon {
     height: 2em;
     width: 1.6em;
-    position: absolute;
-    top: 2em;
     color: white;
 }
 
 .user-icon {
-    right: 6.5em;
+ margin-right: 2rem;
+ margin-left: 2rem;
 }
 
 .cart-icon {
@@ -49,10 +51,6 @@ input {
 .search-icon {
     height: 2em;
     width: 1.4em;
-    position: absolute;
-    top: 2em;
-    right: 11.7em;
-    color: black;
 }
 
 .navigation-right {

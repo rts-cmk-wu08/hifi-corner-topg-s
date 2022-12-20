@@ -1,20 +1,25 @@
 import Navigation from "../Components/Navigation";
+import Cart from '../Components/Cart';
 import SearchBar from "../Components/SearchBar";
-import { FaUser, FaShoppingCart, FaSearch } from "react-icons/fa"
+import { FaUser} from "react-icons/fa"
 import { Link } from "react-router-dom";
 import "./Header.css"
 const Header = () => {
     return ( 
-        <header>
+        <header className="header">
             <Navigation header="true" logo="true"></Navigation>
-                <SearchBar/>
-                <Link to="#">
-                    <FaShoppingCart className="cart-icon"/>
-                </Link>
-                <Link to="#">
+                <div className="navigation-right">
+                    <SearchBar/>
+                  
+                    <Link to="#">
                     <FaUser className="user-icon"/>
-                </Link>
-                <FaSearch className="search-icon" />
+                </Link>  
+                <Cart/>
+                </div>
+               
+             
+                
+                
         </header>
      );
 }

@@ -3,6 +3,7 @@ import Slider from "../Components/Slider";
 
 const Product = () => {
     const card = useLoaderData()
+    console.log(card)
 
     return (
     <article>

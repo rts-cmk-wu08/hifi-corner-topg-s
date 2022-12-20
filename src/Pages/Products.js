@@ -1,8 +1,11 @@
-import Cards from "../Components/Cards";
+import CardsProducts from "../Components/CardsProducts";
 import "./Products.css";
-import Dropdown from "./Dropdown";
+import Dropdown from "../Components/Dropdown";
+import { useEffect, useState } from "react";
+
 
 const Products = () => {
+
   return (
     <>
       <h1>PRODUCTS</h1>
@@ -25,7 +28,7 @@ const Products = () => {
           <Dropdown />
         </aside>
         <section className="productsSection__Cards">
-          <Cards compare={true} stock={true} />
+          <CardsProducts compare={true} stock={true} />
         </section>
       </div>
     </>

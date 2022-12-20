@@ -1,0 +1,44 @@
+.Paymentbox{
+    margin: 1rem;
+   width: 40rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    }
+    
+    .Paymentgroup{
+        display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 31.875rem;
+    align-self: center;
+    }
+    .Paymentgroup input{
+     height: 2rem;
+   
+    }
+
+
+    
+    .getintouch{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 5rem;
+        margin-left: 2rem;
+    }
+
+    .Paymentgroup-city{
+        display: flex;
+       flex-direction: row;
+       align-self: center;
+    }
+    .Paymentgroup__city{
+        width: 18.25rem;
+   
+       }
+    .Paymentgroup__postal{
+     width: 191px;
+margin-left: 1.75rem;
+    }
+    

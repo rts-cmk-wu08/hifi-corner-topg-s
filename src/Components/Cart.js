@@ -41,7 +41,8 @@ const {  cartItems, totalPrice,handleRemoveFromCart,handleDecrease,handleIncreas
     .format(totalPrice) }</p>
 <div className="Btn-space">
 <Link to="Cart-page"><button className="Lintobtns">Go to cart</button></Link>
-<button className="Lintobtns">Go to payment</button></div>
+<Link to="Payment-page"><button className="Lintobtns">Go to payment</button></Link>
+</div>
 </div>
 
 

@@ -7,6 +7,7 @@ const Navigation = () => {
           <Link className="Linked--color" to='/'><p>Home</p></Link>
           <Link className="Linked--color" to='/about'><p>About</p></Link>
           <Link className="Linked--color" to='/product'><p>Shop</p></Link>
+          
         </nav>
      );
 }

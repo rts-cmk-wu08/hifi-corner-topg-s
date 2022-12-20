@@ -7,6 +7,7 @@ import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Products from './Pages/Products'
 import Cartpage from './Pages/Cart-page';
+import Payment from './Pages/Payment-page';
 import Product, { loader as  getProductData }from './Pages/Product';
 import { createBrowserRouter, createRoutesFromElements,
   RouterProvider, Route,} from 'react-router-dom';
@@ -19,6 +20,7 @@ import { createBrowserRouter, createRoutesFromElements,
         <Route index element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/Cart-page" element={<Cartpage/>}/>
+        <Route path="/Payment-page" element={<Payment/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/products" element={<Products/>}/>
         <Route path="/product/:id" element={<Product/>} loader={getProductData}/>

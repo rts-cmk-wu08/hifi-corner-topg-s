@@ -11,7 +11,9 @@ import { Cartcontext } from "../Contexts/Cartcontext";
 
 const Product = () => {
     const card = useLoaderData()
+    
     const {HandleaddtoCart} = useContext(Cartcontext)
+    
     function addToCart(){
         HandleaddtoCart({
         id:card.id,

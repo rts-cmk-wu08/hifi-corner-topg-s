@@ -1,10 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
 import OrangeBtn from "./OrangeBtn";
 import Stock from "./Stock";
+import {CheckboxContext} from "./Checkbox";
 
 const Cards = ({ compare, stock }) => {
+
+    const {savedBrands} = useContext(CheckboxContext)
+    console.log(savedBrands);
+    
+    
+
   const [cards, setCards] = useState();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState();
@@ -25,17 +32,17 @@ const Cards = ({ compare, stock }) => {
     <p>Loading...</p>
   ) : (
     <>
-      {cards.map((card) => (
-        <article key={card.id}>
+        {cards.filter(card => card.brandId == savedBrands).map(filteredCard => (
+          <article key={filteredCard.id}>
           {compare && <p className="compare">Compare</p>}
-          <Link to={`/product/${card.id}`}>
-            <img src={card.imageUrl} alt="" />
+          <Link to={`/product/${filteredCard.id}`}>
+            <img src={filteredCard.imageUrl} alt="" />
           </Link>
-          <p>{card.name}</p>
-          <p>{card.category}</p>
-          <p>£ {card.price}</p>
+          <p>{filteredCard.name}</p>
+          <p>{filteredCard.category}</p>
+          <p>£ {filteredCard.price}</p>
           <div className="containerInStock">
-            <Link to={`/product/${card.id}`}>
+            <Link to={`/product/${filteredCard.id}`}>
               {location.pathname === "/" ? (
                 <OrangeBtn text="Read more" />
               ) : (
@@ -44,7 +51,7 @@ const Cards = ({ compare, stock }) => {
             </Link>
             {stock && (
               <>
-                <Stock stockStatus={card.inStock} />
+                <Stock stockStatus={filteredCard.inStock} />
                 <p>In Stock</p>
               </>
             )}

@@ -1,0 +1,38 @@
+.Cartpage--card{
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem;
+    height: 10.563rem;
+    display: flex;
+background-color: white;
+
+}
+.Cart--Counter{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.Cart--Counter button{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.Counter--number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 2.313rem;
+height: 2.313rem;
+background: #F4F4F2;
+border-radius: 3px;
+}
+
+.totalPrice{
+    text-align: right;
+    margin-right: 3rem;
+}
+
+.Removebtn{
+    position: absolute;
+    right: 5rem;
+  margin-bottom: 5rem;
+}

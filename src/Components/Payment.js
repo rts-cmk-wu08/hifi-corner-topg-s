@@ -18,8 +18,8 @@ const Payment = () => {
 // import { Visa } from "react-pay-icons";
 // import { Mastercard } from "react-pay-icons";
 
-{/* <Visa className="visa"/>
-<Mastercard style={{ margin: 10, width: 75 }} /> */}
+/*{ <Visa className="visa"/>
+<Mastercard style={{ margin: 10, width: 75 }} /> }*/
 
 
 export default Payment;

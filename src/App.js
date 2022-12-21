@@ -4,11 +4,13 @@ import Footer from './Templates/Footer';
 import Main from './Templates/Main';
 import Cartprovider from './Contexts/Cartcontext';
 import CheckboxProvider from './Components/Checkbox';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
+   
     <CheckboxProvider>
-
+    
     <Cartprovider>
   
     <Header/>
@@ -19,7 +21,10 @@ function App() {
 
     </Cartprovider>
 
+    <ScrollToTop/>
+    
     </CheckboxProvider>
+
    
   );
 }

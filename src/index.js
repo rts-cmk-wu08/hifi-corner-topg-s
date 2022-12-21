@@ -16,6 +16,7 @@ import { createBrowserRouter, createRoutesFromElements,
 
   export const router = createBrowserRouter(
     createRoutesFromElements(
+      
       <Route path="/" element={<App/>}>
         <Route index element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
@@ -27,12 +28,13 @@ import { createBrowserRouter, createRoutesFromElements,
       </Route>
     )
   );
+  
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-        <RouterProvider router={router}/>
+            <RouterProvider router={router}/>
   </React.StrictMode>
 );
 

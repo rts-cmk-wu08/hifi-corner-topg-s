@@ -1,9 +1,10 @@
 import './orangeBtn.css'
-const OranegBtn = ({text}) => {
-    
+const OranegBtn = ({text, onclickBtn, func}) => {
+
+
     return ( 
     <>
-        <button className='orangeBtn'>{text}</button>
+        {onclickBtn  ? <button onClick={func} className='orangeBtn'>{text}</button> : <button className='orangeBtn'>{text}</button>}
     </>
 
      );

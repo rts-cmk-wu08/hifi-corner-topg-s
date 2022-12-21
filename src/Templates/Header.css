@@ -1,0 +1,58 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+header nav {
+    display: flex;
+    justify-content: start;
+    padding-left: 2em;
+    height: 6em;
+    font-weight: lighter;
+}
+
+nav img {
+    height: 5em;
+    padding-right: 3em;
+    padding-top: .5em;
+}
+
+
+
+.contactUs {
+    color: white;
+    text-decoration: none;
+}
+
+.Linked--color,
+.contactUs {
+    padding-right: 3em;
+    padding-top: 1.2em;
+}
+
+.user-icon,
+.cart-icon {
+    height: 2em;
+    width: 1.6em;
+    color: white;
+}
+
+.user-icon {
+ margin-right: 2rem;
+ margin-left: 2rem;
+}
+
+.cart-icon {
+    right: 3em;
+}
+
+.search-icon {
+    height: 2em;
+    width: 1.4em;
+}
+
+.navigation-right {
+    display: flex;
+}

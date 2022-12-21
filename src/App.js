@@ -12,7 +12,7 @@ function App() {
     <Header/>
   
     <Main/>
-    <Faq/>
+    
     <Footer/>
 </Cartprovider>
    

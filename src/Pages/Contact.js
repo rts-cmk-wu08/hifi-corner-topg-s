@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+
 import "./Contact.css"
 export default function Contact() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();

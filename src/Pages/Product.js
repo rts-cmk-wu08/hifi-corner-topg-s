@@ -21,8 +21,6 @@ const Product = () => {
         count:1,
         price:card.price,
         imageUrl:card.imageUrl
-
-
       })
         
         

@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
 import OrangeBtn from "./OrangeBtn"
+import Stock from "../Components/Stock"
 
 
 
-
-const Cards = () => {
+const Cards = ({compare, stock}) => {
 
     const [cards, setCards] = useState();
     const [loading, setLoading] = useState(true);

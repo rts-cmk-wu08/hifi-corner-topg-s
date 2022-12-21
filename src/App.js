@@ -7,7 +7,6 @@ import Cartprovider from './Contexts/Cartcontext';
 
 function App() {
   return (
-  <CheckboxProvider >
     <Cartprovider>
   
     <Header/>
@@ -16,7 +15,7 @@ function App() {
     <Faq/>
     <Footer/>
 </Cartprovider>
-    </CheckboxProvider>
+   
  
 
   );

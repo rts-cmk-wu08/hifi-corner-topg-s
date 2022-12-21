@@ -8,9 +8,7 @@ import {CheckboxContext} from "./Checkbox";
 const Cards = ({ compare, stock }) => {
 
     const {savedBrands} = useContext(CheckboxContext)
-    console.log(savedBrands);
-    
-    
+    //console.log(savedBrands);
 
   const [cards, setCards] = useState();
   const [loading, setLoading] = useState(true);
@@ -51,7 +49,7 @@ const Cards = ({ compare, stock }) => {
             </Link>
             {stock && (
               <>
-                <Stock stockStatus={filteredCard.inStock} />
+                <Stock stockStatus={filteredCard.stock} />
                 <p>In Stock</p>
               </>
             )}

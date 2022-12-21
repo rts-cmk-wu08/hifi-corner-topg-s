@@ -4,9 +4,6 @@ import Footer from './Templates/Footer';
 import Main from './Templates/Main';
 
 import Cartprovider from './Contexts/Cartcontext';
-import CheckboxProvider from './Components/Checkbox';
-
-    
 
 function App() {
   return (
@@ -16,7 +13,7 @@ function App() {
     <Header/>
   
     <Main/>
-
+    <Faq/>
     <Footer/>
 </Cartprovider>
     </CheckboxProvider>

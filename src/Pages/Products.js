@@ -1,7 +1,9 @@
 import CardsProducts from "../Components/CardsProducts";
+import Cards from "../Components/Cards";
 import "./Products.css";
 import Dropdown from "../Components/Dropdown";
 import { useEffect, useState } from "react";
+import CardsContainer from "../Components/CardsContainer";
 
 
 const Products = () => {
@@ -29,6 +31,7 @@ const Products = () => {
         </aside>
         <section className="productsSection__Cards">
           <CardsProducts compare={true} stock={true} />
+          <CardsContainer />
         </section>
       </div>
     </>

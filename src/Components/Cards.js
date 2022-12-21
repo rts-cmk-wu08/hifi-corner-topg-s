@@ -5,11 +5,13 @@ import OrangeBtn from "./OrangeBtn"
 
 
 
+
 const Cards = () => {
 
     const [cards, setCards] = useState();
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState();
+
 
     const location = useLocation()
     useEffect(() => {
@@ -25,14 +27,29 @@ const Cards = () => {
             <>
                 {cards.map(card => (
                     <article key={card.id}>
-                         <Link to={`/product/${card.id}`}><img src={card.imageUrl} alt="" /></Link>
-                        <p>{card.name}</p>
-                        <p>{card.category}</p>
-                        <p>£ {card.price}</p>
-                        <div>
-                        <Link to={`/product/${card.id}`}><OrangeBtn text="Read more"/></Link>
-                        </div>
-                    </article>
+                    {compare && <p className="compare">Compare</p>}
+                    <Link to={`/product/${card.id}`}>
+                      <img src={card.imageUrl} alt="" />
+                    </Link>
+                    <p>{card.name}</p>
+                    <p>{card.category}</p>
+                    <p>£ {card.price}</p>
+                    <div className="containerInStock">
+                      <Link to={`/product/${card.id}`}>
+                        {location.pathname === "/" ? (
+                          <OrangeBtn text="Read more" />
+                        ) : (
+                          <OrangeBtn text="Add to cart" />
+                        )}
+                      </Link>
+                      {stock && (
+                        <>
+                          <Stock stockStatus={card.stock} />
+                          <p>In Stock</p>
+                        </>
+                      )}
+                    </div>
+                  </article>
                 ))}
             </>
          );

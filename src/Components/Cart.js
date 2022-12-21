@@ -17,7 +17,7 @@ const {  cartItems, totalPrice,handleRemoveFromCart,handleDecrease,handleIncreas
 
     return (  
         <section className="Cart">
-<FaShoppingCart onClick={handleClick} size={35} />
+<FaShoppingCart color="white" onClick={handleClick} size={35} />
 <div className={`cartContents ${dropdownVisible ? 'cartContents--visible' : ''}`}>  
 <h2>Cart</h2>
  {cartItems.map((item) => (

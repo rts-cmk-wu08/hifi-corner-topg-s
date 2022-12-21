@@ -7,13 +7,12 @@ import Cartprovider from './Contexts/Cartcontext';
 
 function App() {
   return (
-
     <Cartprovider>
   
     <Header/>
   
     <Main/>
-
+    <Faq/>
     <Footer/>
 </Cartprovider>
    

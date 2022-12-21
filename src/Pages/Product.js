@@ -89,9 +89,11 @@ const Product = () => {
 
 
         <section className="specifications__wrapper">
+            
             <span className="horBorder"></span>
             <h1>product specifications</h1>
-            <article className="specifications">
+            <article className="liveChat">
+            <div className="specifications">
             {card.specifications.map((card,index) => (
 
                     <div className="eachSpecif__wrapper" key={index}>
@@ -105,9 +107,27 @@ const Product = () => {
                     </div>
 
                 ))}
+            </div>
+
+            <div className={isActive ? 'chat__wrapper hidden' : 'chat__wrapper'}>
+            <ChatApp/>
+            </div>
             </article>
+           
+   
+        <button className= "liveChat__logo" onClick={handleClick}>
+            {isActive ? <BsFillChatFill/> : <svg width="32" height="32" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M38.9069 4L4 37.0082" stroke="#FF781A" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M4 4L38.9069 37.0082" stroke="#FF781A" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+}
+        </button>
         </section>
+
+                
+
     </>
+
     )
 
 }

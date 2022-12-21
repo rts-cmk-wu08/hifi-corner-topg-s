@@ -1,12 +1,12 @@
-import { json, useLoaderData } from "react-router-dom"
+import { useLoaderData } from "react-router-dom"
 import Slider from "../Components/Slider";
 import './product.css'
 import Counter from "../Components/Counter"
 import OrangeBtn from "../Components/OrangeBtn"
-import { click } from "@testing-library/user-event/dist/click";
-import Cart from "../Components/Cart";
-import {useContext} from "react"
+import {useContext, useState} from "react"
 import { Cartcontext } from "../Contexts/Cartcontext";
+import ChatApp from "../Components/ChatApp"
+import { BsFillChatFill } from "react-icons/bs"
 
 
 const Product = () => {
@@ -24,6 +24,12 @@ const Product = () => {
       })
         
         
+    }
+
+    const [isActive, setIsActive] = useState(true);
+
+  const handleClick = event => {
+    setIsActive(current => !current);
     }
 
 

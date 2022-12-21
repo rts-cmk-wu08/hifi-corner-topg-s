@@ -7,15 +7,14 @@
 }
 .cartContents--visible{
     display: block;
-position: absolute;
-z-index: 1;
-right: 5%;
-background-color: white;
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    background-color: white;
 }
 .Cart{
     text-align: right;
     margin-right: 5em;
-  
 }
 .cartItem{
     margin-top: 5rem;
@@ -26,14 +25,13 @@ background-color: white;
     justify-content: space-evenly;
 }
 button{
-   background-color: white;
+    background-color: white;
     outline: none;
     border: none;
 }
 .Removebtn--cart{
     position:absolute;
- margin-bottom: 10em;
-  
+    margin-bottom: 10em;
 }
 .Cartprice{
     margin-top: 1.25rem;
@@ -55,10 +53,8 @@ button{
     background-color: #FF6900;
     border-radius: 3px;
     border: 0px;
-
 }
 .Btn-space{
     display: flex;
     justify-content: space-evenly;
 }
-
